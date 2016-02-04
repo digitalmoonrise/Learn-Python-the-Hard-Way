@@ -1,0 +1,62 @@
+#ex22.py
+#retracing
+
+print #print prints to the console
+"" #use these to create a string '' also works
+	#You can also print vars Ie. print var1 % var2
+	# or do it through print var+ var2 + var3
++ adds
+- subracts
+* multiplys
+/ divides
+% percent, but it also does other things FORMAT CHARACTERS
+	#Also defines vars from within strings
+	#%s = if your var is a string
+	#%r = if your testing -- print no matter what
+	#%d = for numbers
+	EXAMPLE: weight = 100
+	print "I weigh %r pounds" % (weight)
+
+	you can also assign a %formatter to a var 
+		ie. formatter = "%r %r" print formatter % (1,2)
+
+< less than
+> greater than
+<= less than or equal
+>= greater than or equal
+
+= how you assign a variable
+
+Formatting Outputs
+"""string """ will print your output exactly like you have it in the triple parens
+\ - like regex - escapes out of string, also useful for using quotes 
+\n - goes to new line ex. months = "jan\nFebn\"
+t - tabs - ex "\tI'm tabbed in"
+
+raw_input() - takes what user inputs
+	ex. print "how old are u"  age = raw_input() #allows user to input whatever
+	To get a number for math, you have to use x = int(raw_input()) #converts answer into int using int() function
+	You can also put stuff that the person sees so they know the raw_input() ex raw_input("name?")
+
+from sys import argv (library) #from system import argument variable (or another module/library) #holds arguments defined before prgm is run. 
+
+You then have to unpack the argv ex one, two, three = argv ##The one,two,three would be defined when typing python ex2.py apple,banana, pear
+
+WITH FILES
+open('filename', 'r+ OR w OR r') #how you open files. you can assign these to a var ex c = open(far.txt)
+read() how you read in the console. you would first open() the file w a var attached (ex. x = open(file)) and then run read by var x.read()
+
+close() : closes files
+readline(): reads hyst ibe kube
+truncate(): deletes all info watch out
+write('words'):writes to file
+
+generally these work like a = open('fart.txt', 'r+'), then you can use the other commands like
+		a.write('fart in pants')
+
+general things
+len()  how big a file is 
+exists() does the file exist
+
+FUNCTIONS
+general format:  def name(arg1,arg2): 
